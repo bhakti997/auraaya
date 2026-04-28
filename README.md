@@ -2,29 +2,27 @@
 Auraaya - Ethical Heritage Luxury Website
 
 
-​Student Information
-
 ​Name: Bhakti Maisuria
 
 ​Student Number: ST10540669
 
-​Module: WEDE5020 - Web Development
+​Module: WEDE5020w - Web Development
 
 
-​1. Project Overview
+​1. Project Overview: Auraaya - Wearable History 
 
 ​Auraaya is a heritage-focused jewellery brand founded in 2026. The brand specializes in deconstructing traditional, heavy Indian designs—such as Minakari (enamelling) and Kundan (gemstone setting) techniques—into sleek, minimalist 18K gold-plated vermeil pieces. Known as "Wearable History," the brand bridges the gap between ancient craftsmanship and modern style. 
 
 
 ​2. Website Goals and Objectives
 
-​The primary goal is to transform Auraaya from a local physical boutique into a digital-first e-commerce brand capable of national and international reach. 
+​The primary goal is to transform Auraaya from a local physical boutique into a digital-first e-commerce brand capable of nationwide reach. 
 
 ​Establish a user-friendly e-commerce platform.
 
 ​Communicate the unique value proposition of "ethically sourced heritage luxury".
 
-​Build Trust through a secure and professional digital presence.
+​Build trust through a secure and professional digital presence.
 
 ​Target KPIs: Measured through website traffic, monthly online sales, and email subscriber growth.
 
@@ -37,7 +35,7 @@ Auraaya - Ethical Heritage Luxury Website
 
 3. Design and Aesthetics
 
-​To reflect the "Ethical Heritage Luxury" brand identity, the website design follows these specifications:
+​To reflect the "Ethical Heritage Luxury" brand identity, the website design follows these specifications
 
 ​Visual Direction: A blend of traditional Indian motifs with high-end, minimalist luxury.
 
@@ -61,13 +59,13 @@ Auraaya - Ethical Heritage Luxury Website
 
 ​Heritage Story (About Us): Dedicated pages for mission, ethical sourcing, and cultural inspiration.
 
-​Shopping Cart: Functional integration for item selection and secure checkout.
+​Payment: Functional integration for item selection and secure checkout.
 
 ​Customer Support: Contact methods and FAQs regarding shipping and returns.
 
 
 
-​5. Sitemap
+​5. Site Navigation 
 
 Homepage (index.html) — Main entry point featuring the brand story and featured collections.
 
@@ -79,12 +77,7 @@ Homepage (index.html) — Main entry point featuring the brand story and feature
 
 ​Contact Us (contact.html) — Support page including office locations and general contact form.
 
-graph TD
-    A[Homepage: index.html] --> B[About Us: about.html]
-    A --> C[Products: product.html]
-    A --> D[Contact Us: contact.html]
-    C --> E[Payment & Checkout: payment.html]
-    D --> A
+
 
 ​6. Technical Requirements
 
@@ -95,63 +88,72 @@ graph TD
 ​Hosting/Domain: auraaya.com via Shopify.
 
 
-Content research and sourcing 
-
 
 ​7. Timeline and Milestones
 
-​Phase 1: Project Initiation & Approval 
-
+​Part 1: Phase 1 -  Project Initiation & Approval 
 ​Dates: 08 April – 14 April 2026
-
 ​Tasks: Finalized project proposal, established website goals, and secured approval for the "Auraaya" brand.
 
-​Phase 2: Content Research & Planning 
-
+Part 1: ​Phase 2 - Content Research & Planning 
 ​Dates: 16 April – 20 April 2026
+​Tasks: Gathered imagery, drafted brand storytelling content.
 
-​Tasks: Gathered imagery, drafted brand storytelling content, and designed the site structure (Sitemap).
-
-​Phase 3: HTML Development & Repository Setup 
-
+Part 1: ​Phase 3 - HTML Development & Repository Setup 
 ​Dates: 21 April – 27 April 2026
-
 ​Tasks: Created core HTML files, established local folder structure, and pushed initial code to GitHub.
 
-​Phase 4: Part 1 Submission (Current) 
-
+Part 1: ​Phase 4 - Part 1 Submission  
 ​Date: 28 April 2026
+​Tasks: Finalized README documentation, sourcing assets, and submitting Part 1 for grading.
 
-​Tasks: Finalizing README documentation, sourcing assets, and submitting Part 1 for grading.
+​Part 2: Phase 1 - CSS styling and desktop solutions 
+​Dates: 01 May – 14 May 2026
+​Tasks: Developing the external CSS stylesheet, establish base style, typography style, visual styles, layout structure.
 
-​Part 2: Design and Front-End Development
+Part 2: Phase 2 - Responsive design, GitHub repository 
+Dates: 18 May - 29 May 
+Tasks: Identify breakpoints, use relative units. Responsive images, test and iterate 
 
-​Dates: 01 May – 29 May 2026
+​Part 3: Phase 1 - Functionality, JavaScript enhancement, SEO
+​Dates: 30 May – 02 June 2026
+​Tasks: Interactive elements, dynamic content. On-Page SEO, additional requests. 
 
-​Tasks: Developing the external CSS stylesheet, implementing typography (Playfair Display & Montserrat), and ensuring the layout is responsive for mobile and desktop,GitHub repository.
+Part 3: Phase 2 - Form functionality and validation. GitHub repository 
+Dates: 03 June - 07 June 2026 
+Tasks: Form elements, validation and submission. JavaScript form validation 
+​
+8. Content Research and Sourcing 
 
-​Status: Upcoming.
+Competitor Analysis
 
-​Part 3: Interactivity and Final Deployment
+Tanishq: Researched their "heritage storytelling" approach. This influenced Auraaya’s use of cultural narratives and the "educational selling" tone used in the product descriptions.
 
-​Dates: 30 May – 07 June 2026
+Palmonas: Analysed their technical specifications for "Demi-Fine" jewellery. This guided the material descriptions for Auraaya’s 18K Gold Vermeil products to ensure consumer trust.
 
-​Tasks: Adding JavaScript for form validation (Contact/Enquiry pages), final content proofing, and full site deployment via GitHub Pages.
+Sourcing & Assets
 
-​Status: Upcoming.
+Imagery: All product visuals were custom-generated using Meta AI to maintain a consistent, high-end "Modern Minimalist" aesthetic.
+
+Typography: Sourced via Google Fonts.
+
+Playfair Display (Serif) for heritage elegance.
+Montserrat (Sans-Serif) for modern readability.
+
+Text Content: All brand copy and product descriptions are original, written to reflect Auraaya’s unique brand voice: "Wearable History."
 
 
-​8. Changelog
+​9. Changelog
 
 Development Changelog
 
 ​2026-04-12: Completed initial project proposal for Auraaya and defined heritage luxury objectives.
 
-​2026-04-18: Finalized sitemap and low-fidelity wireframes for Homepage, About, and Product pages [cite: 502-506].
+​2026-04-18: Finalized site navigation and low-fidelity wireframes for Homepage, About, and Product pages.
 
 ​2026-04-20: Created the root directory and subfolders for css, js, and images.
 
-​2026-04-22: Developed basic HTML structure for all 5 core pages with semantic tags (<header>, <main>, <footer>).
+​2026-04-22: Developed basic HTML structure for all 5 core pages with semantic tags header, main, footer.
 
 ​2026-04-25: Successfully linked all pages through a functional navigation menu.
 
@@ -161,12 +163,32 @@ Development Changelog
 
 
 
-​9. References 
+​10. References 
 
-​freeCodeCamp.org, 2020. How to Design a Website – A UX Wireframe Tutorial. [video online] Available at: https://www.youtube.com/watch?v=pN92rnO_n5U [Accessed 12 April 2026].
 
-​Sørensen, C.E. 2012. Playfair Display. [Online]. Available at: https://fonts.google.com/specimen/Playfair+Display [Accessed 12 April 2026].
+freeCodeCamp.org, 2020. How to Design a Website – A UX Wireframe Tutorial. [video online] Available at:<https://www.youtube.com/watch?v=pN92rnO_n5U> [Accessed 12 April 2026]. 
 
-​Ulanovsky, J. 2011. Montserrat. [Online]. Available at: https://fonts.google.com/specimen/Montserrat [Accessed 12 April 2026].
+Tanishq Reference: Tanishq. 2024. Shop Indian Jewellery Online. [Online]. Available at: <https://www.tanishq.co.in/> [Accessed 25 April 2026].
 
+Palmonas Reference: Palmonas. 2024. India's First Demi-Fine Jewellery Brand. [Online]. Available at: <https://www.palmonas.com/> [Accessed 25 April 2026].
+
+Meta AI (Images): Meta AI. 2024. Minimalist Gold Jewellery with Indian Motifs [Image generated by AI]. Available at:<https://www.meta.ai/> [Accessed 20 April 2026].
+
+Tanishq Instagram Reference:
+
+Tanishq (@tanishqjewellery). 2024. Tanishq Jewellery Instagram Profile. [Instagram]. Available at:<https://www.instagram.com/tanishqjewellery/> [Accessed 25 April 2026].
+
+Palmonas Instagram Reference:
+
+Palmonas (@palmonas_official). 2024. Palmonas Official Instagram Profile. [Instagram]. Available at:<https://www.instagram.com/palmonas_official/>[Accessed 25 April 2026].
+
+The Google Fonts References:
+
+Sørensen, C.E. 2012. Playfair Display. [Online]. Available at: <https://fonts.google.com/specimen/Playfair+Display> [Accessed 12 April 2026]. 
+
+Ulanovsky, J. 2011. Montserrat. [Online]. Available at: <https://fonts.google.com/specimen/Montserrat> [Accessed 12 April 2026].
+
+Pinterest. 2026. Emerald Green Colour. [Online]. Available at: <https://www.pinterest.com/> [Accessed 12 April 2026]. 
+
+Pinterest. 2026. Gold Color. [Online]. Available at: <https://www.pinterest.com/> [Accessed 13 April 2026].
 
