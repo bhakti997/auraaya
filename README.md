@@ -182,6 +182,8 @@ Palmonas Instagram Reference:
 
 Palmonas (@palmonas_official). 2024. Palmonas Official Instagram Profile. [Instagram]. Available at:<https://www.instagram.com/palmonas_official/>[Accessed 25 April 2026].
 
+Blue Nile. 2024. How to Clean Jewelry at Home. [Online]. Available at: <https://www.bluenile.com/blog/diamonds-jewelry/home-jewelry-cleaning-guide> [Accessed 20 April 2026].
+
 The Google Fonts References:
 
 Sørensen, C.E. 2012. Playfair Display. [Online]. Available at: <https://fonts.google.com/specimen/Playfair+Display> [Accessed 12 April 2026]. 
