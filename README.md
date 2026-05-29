@@ -185,12 +185,19 @@ Fluid Layouts: Utilized percentages (%) for container and column widths, ensurin
 #Desktop 
 ![Desktop View](images/desktop.png) 
 
+
+
+
 #Tablet 
-![ipad View](images/ipad.png) /* --- 1. GLOBAL RESET & BASE --- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
+![ipad View](images/ipad.png) 
+
+
+
 
 #Mobile 
 ![Mobile View](images/mobile.png)
+
+
 
 
 3. Updated Changelog for part 2
