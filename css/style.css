@@ -1,4 +1,4 @@
-/* --- CENTERED TERRACOTTA BRANDING --- */
+/* header and footer */
 .tarcotta-bg { 
     background-color: #E2725B; 
     color: white; 
@@ -16,7 +16,7 @@
     font-size: 1.1rem;
 }
 
-/* --- ABOUT PAGE: STAIRCASE (LEFT TO RIGHT, LOW TO HIGH) --- */
+/* ABOUT PAGE: STAIRCASE */
 .page-about main { width: 90%; max-width: 1200px; margin: 60px auto;
 box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
 
@@ -27,7 +27,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
     align-items: end; /* Aligns to bottom to create staircase */
 }
 
-/* Box Heights (Increased for better look) */
+/* Box Heights */
 .page-about .box-1 { height: 1000px; } 
 .page-about .box-2 { height: 1200px; } 
 .page-about .box-3 { height: 1400px; } 
@@ -49,7 +49,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
 .page-about .feature-box h2 { margin-bottom: 20px; }
 .page-about .feature-box p { font-size: 1.05rem; }
 
-/* --- MOBILE FIX --- */
+/* MOBILE FIX */
 @media (max-width: 768px) {
     .page-about .mission-vision-artisans { grid-template-columns: 1fr; }
     .page-about .box-1, .page-about .box-2, .page-about .box-3 { height: auto; margin: 20px 0; }
@@ -60,12 +60,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
 
 
 
-
-
-
-
-/* --- product page--- */
-/* --- 1. GLOBAL RESET & BASE --- */
+/* product page */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
 
 .page-products *, .page-products *::before, .page-products *::after { 
@@ -83,7 +78,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
     flex-direction: column;
 }
 
-/* --- 2. HEADER & FOOTER (Terracotta) --- */
+/* HEADER & FOOTER */
 .page-products header, 
 .page-products footer { 
     background-color: #E2725B; 
@@ -101,7 +96,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
     font-weight: bold;
 }
 
-/* --- 3. MAIN CONTENT --- */
+/* MAIN CONTENT */
 .page-products main {
     flex: 1;
     max-width: 1000px; /* Fixed: was 100px */
@@ -112,7 +107,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
     box-shadow: 0 0 20px 8px #ac0606; /* Added main shadow back */
 }
 
-/* --- 4. HERO SECTION --- */
+/* HERO SECTION */
 .page-products .hero-img {
     box-shadow: 0 4px 15px #c93706;
     width: 100%;
@@ -120,7 +115,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
     border: 5px solid #D4AF37;
 }
 
-/* --- 5. CATALOGUE GRID --- */
+/* CATALOGUE GRID */
 .page-products .catalogue-wrapper {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -140,7 +135,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
     gap: 1.5rem;
 }
 
-/* --- 6. PRODUCT FRAMES (Gold & Emerald) --- */
+/* PRODUCT FRAMES */
 .page-products .product-item {
     border: 3px solid #D4AF37;
     padding: 1.5rem;
@@ -159,7 +154,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
     box-shadow: 0 4px 15px #50C878;
 }
 
-/* --- 7. RESPONSIVE DESIGN --- */
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .page-products .catalogue-wrapper { grid-template-columns: 1fr; }
     .page-products .product-grid { grid-template-columns: 1fr; }
@@ -171,10 +166,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
 
 
 
-
-
-/* --- index --- */
-/* --- 1. GLOBAL RESET & BASE --- */
+/* index */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
 
 *, *::before, *::after { 
@@ -199,7 +191,7 @@ body {
     min-height: 100vh; /* This ensures the page is at least full height */
 }
 
-/* --- 2. HEADER & FOOTER --- */
+/* HEADER & FOOTER */
 header, footer {
     background-color: #E2725B; 
     color: #FFFFFF; 
@@ -219,9 +211,9 @@ header nav a, footer a {
     font-family: 'Playfair Display', serif;
 }
 
-header nav a { text-decoration: underline !important; }
+header nav a { text-decoration: underline ; }
 
-/* --- 3. MAIN CONTENT --- */
+/* MAIN CONTENT */
 main {
     flex: 1; /* Pushes the footer to the bottom */
     box-shadow: 0 0 20px 8px #ac0606; 
@@ -238,7 +230,7 @@ h1, h2, h3, h4, legend {
     margin: 1.5rem 0 1rem;
 }
 
-/* --- 4. IMAGE CLASSES (YOUR SHADOWS & BORDERS) --- */
+/* IMAGE CLASSES */
 .hero-image {
     display: block;
     margin: 2rem auto;
@@ -269,7 +261,7 @@ h1, h2, h3, h4, legend {
     box-shadow: 0 0 15px #50C878, 0 0 30px #D4AF37;
 }
 
-/* --- 5. PRODUCT CARDS --- */
+/* PRODUCT CARDS */
 .product-card {
     width: 90%;
     max-width: 500px;
@@ -280,7 +272,7 @@ h1, h2, h3, h4, legend {
     text-align: center;
 }
 
-/* --- 6. BUTTONS --- */
+/* BUTTONS */
 button, input[type="submit"] {
     padding: 1.2rem 2.5rem;
     background-color: #FFFFFF;
@@ -299,7 +291,7 @@ button:hover, input[type="submit"]:hover {
     border-color: #50C878;
 }
 
-/* --- 7. RESPONSIVE MEDIA QUERIES --- */
+/* RESPONSIVE MEDIA QUERIES  */
 @media (max-width: 600px) {
     main { padding: 1rem; width: 95%; margin: 1rem auto; }
     .product-card { width: 95%; padding: 1rem; }
@@ -311,13 +303,7 @@ button:hover, input[type="submit"]:hover {
 
 
 
-
-
-    
-
-
-
-/* --- contact--- */
+/* contact */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -329,7 +315,7 @@ body {
     line-height: 1.6;
 }
 
-/* --- 2. GLOBAL HEADER & FOOTER (Identical & White Text) --- */
+/* GLOBAL HEADER & FOOTER */
 header, footer { 
     background-color: #E2725B; 
     color: #FFFFFF; 
@@ -349,7 +335,7 @@ header nav a, footer a {
     font-family: 'Playfair Display', serif;
 }
 
-/* --- 3. MAIN CONTENT (Centered) --- */
+/* MAIN CONTENT (Centered) */
 main {
     max-width: 1000px;
     margin: 3rem auto;
@@ -363,7 +349,7 @@ h1, h2, h3, h4, legend {
     margin: 1.5rem 0 1rem;
 }
 
-/* --- 4. GLOBAL IMAGES (Framed with Dual Shadows) --- */
+/* GLOBAL IMAGES  */
 .framed-image {
     display: block;
     margin: 2rem auto;
@@ -379,7 +365,7 @@ h1, h2, h3, h4, legend {
     box-shadow: 0 0 15px #50C878, 0 0 30px #D4AF37;
 }
 
-/* --- 5. BUTTONS (Substantial & Centered) --- */
+/* BUTTONS (Substantial & Centered) */
 button, input[type="submit"] {
     padding: 1.2rem 2.5rem; /* Larger, more "button-like" */
     background-color: #FFFFFF;
@@ -426,48 +412,102 @@ input[type="text"], input[type="email"], textarea {
 
 
 
-
-
 /* payment */
-.page-payment header { 
-    background-color: #E2725B; /* Terracotta */
-    padding: 2rem 1rem; 
-    text-align: center; 
-    font-family: 'Playfair Display', serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
+
+.page-products *, .page-products *::before, .page-products *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
 }
 
-.page-payment header h1 {
-    color: #FFFFFF; /* Auraaya text changed to WHITE */
-    font-size: 3rem 2rem;
-    margin-bottom: 0.5rem;
-    font-family: 'Playfair Display', serif;
-}
-
-.page-payment header nav a { 
-    color: #FFFFFF; /* Nav links changed to WHITE */
-    margin: 0px 5px; 
-    text-decoration: none; 
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem 2rem;
-}
-
-/* --- 2. BODY TEXT FIX (Dark/Black for Readability) --- */
-.page-payment { 
+.page-products { 
     font-family: 'Montserrat', sans-serif; 
     background-color: #fffaf0; 
-    color: #333333; /* Dark Grey/Black for body text */
-    line-height: 1.6;
+    color: #333;
 }
 
-/* --- 3. FOOTER FIX (White Text for Contrast) --- */
-.page-payment footer { 
-    background-color: #E2725B; /* Terracotta */
-    color: #FFFFFF; /* Footer text changed to WHITE */
-    padding: 3rem 2rem; 
-    text-align: center; 
+/* --- 2. HEADER & FOOTER (Terracotta Theme) --- */
+.page-products header, 
+.page-products footer { 
+    background-color: #E2725B; 
+    color: #fff; 
+    padding: 50px 30px; 
+}    
+
+.page-products nav { margin-top: 1rem; text-align: center; }
+.page-products nav a { 
+    color: #fff; 
+    margin: 0 15px; 
+    text-decoration: none; 
     font-family: 'Playfair Display', serif;
 }
 
-.page-payment footer a { 
-    color: #FFFFFF; /* Footer links changed to WHITE */
+/* --- 3. HERO SECTION (With Gold Frame & Shadow) --- */
+.page-products .hero-img {
+    box-shadow: 0 4px 15px #c93706; /* Hero shadow */
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    display: block;
+    border: 5px solid #D4AF37; /* Gold Frame */
+}
+
+/* --- 4. LAYOUT STRUCTURE (Grid) --- */
+.page-products main {
+    max-width: 1000px; /* Adjusted to professional laptop width */
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 0 0 20px 8px #ac0606; /* Main container shadow */
+    background: #fff;
+}
+
+.page-products .catalogue-wrapper {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar + Product Grid layout */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.page-products .features-sidebar {
+    border: 2px solid #D4AF37; /* Gold sidebar border */
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.page-products .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2-column grid for products */
+    gap: 1.5rem;
+}
+
+/*  PRODUCT FRAMES (Gold & Emerald Hover) */
+.page-products .product-item {
+    border: 3px solid #D4AF37; /* Gold Frame */
+    padding: 1.5rem;
+    background: #fff;
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+.page-products .product-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.page-products .product-item:hover {
+    border-color: #50C878; /* Emerald green border on hover */
+    box-shadow: 0 4px 15px #50C878; /* Emerald shadow on hover */
+}
+
+/* RESPONSIVE DESIGN */
+/* Tablets / iPad: stack sidebar and grid */
+@media (max-width: 768px) {
+    .page-products .catalogue-wrapper { grid-template-columns: 1fr; }
+}
+
+/* Mobile: single column view */
+@media (max-width: 480px) {
+    .page-products .product-grid { grid-template-columns: 1fr; }
 }
