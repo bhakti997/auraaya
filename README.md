@@ -188,7 +188,7 @@ Fluid Layouts: Utilized percentages (%) for container and column widths, ensurin
 
 
 
-![Desktop View](images/desktop2.png) 
+![Desktop View](images/desktop3.png)
 
 
 

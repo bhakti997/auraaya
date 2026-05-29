@@ -63,6 +63,16 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
 /* product page */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
 
+.page-products nav a { 
+    color: #fff; 
+    margin: 0 15px; 
+    text-decoration: none; /* Changed from underline to none */
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    border-bottom: 2px solid #fff; /* This adds the line */
+    padding-bottom: 2px; /* Adds a little space between the text and the line */
+}
+
 .page-products *, .page-products *::before, .page-products *::after { 
     box-sizing: border-box; 
     margin: 0; 
@@ -168,6 +178,26 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
 
 /* index */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
+
+/* 1. This rule only applies to the Index page */
+.page-index header nav a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 2px solid #FFFFFF; /* Line only here */
+    padding-bottom: 2px;
+}
+
+header nav a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    border-bottom: none; /* No line here */
+}
 
 *, *::before, *::after { 
     box-sizing: border-box; 
