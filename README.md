@@ -202,17 +202,18 @@ Fluid Layouts: Utilized percentages (%) for container and column widths, ensurin
 
 3. Updated Changelog for part 2
 
-2026-05-01: Implemented external style.css file and linked all HTML pages.
+2026-05-24: Addressed Part 1 feedback:no feedback for part 1
+Implemented external style.css file and linked all HTML pages.
 
 2026-05-05: Established base styles, including CSS reset for browser consistency, and set default typography (Playfair Display and Montserrat).
 
-2026-05-20: Implemented layout structure using Flexbox/CSS Grid for a clean, grid-based aesthetic.
+2026-05-25: Implemented layout structure using Flexbox/CSS Grid for a clean, grid-based aesthetic.
 
-2026-05-20: Added visual styles including box-shadows and hover pseudo-classes for interactive elements.
+2026-05-28: Added visual styles including box-shadows and hover pseudo-classes for interactive elements.
 
-2026-05-24: Created media queries for tablet and mobile breakpoints to ensure navigation and image responsiveness.
+2026-05-28: Created media queries for tablet and mobile breakpoints to ensure navigation and image responsiveness.
 
-2026-05-24: Addressed Part 1 feedback:no feedback for part 1 
+2026-05-29: Final checks before submission. 
 
 
 ​10. References 
