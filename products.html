@@ -3,108 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auraaya | Product Catologue</title>
+    <title>Auraaya | Product Catalogue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-products">
 
-    <!--Header section with brand name and main navigation-->
-    <header>
+    <header class="tarcotta-bg">
         <h1>Auraaya</h1>
-        <!--Main site navigation - consistent across all pages-->
         <nav>
-            <a href="index.html">Home</a></li>
-            <a href="about.html">About Us</a>
-            <a href="products.html">Products</a>
-            <a href="payment.html">Payment</a>
+            <a href="index.html">Home</a>|
+            <a href="about.html">About Us</a>|
+            <a href="products.html">Products</a>|
+            <a href="payment.html">Payment</a>|
             <a href="contact.html">Contact</a>
-       </nav>
+        </nav>
     </header>
 
-    <hr>
-
-<!--Hero banner for products page - sets brand tone-->
-<img src="images/heroimageproducts.jpeg" alt="hero image for products page" width="500">
-
-    <!--Main product catalogue content area-->
     <main>
+        <img src="images/heroimageproducts.jpeg" alt="hero image for products page" class="hero-img">
+
         <h1>Our Full Collection</h1>
         <p>Explore our curated investment pieces - deconstructed heritage for modern life.</p>
 
-        
-        <!--Product 1-->
-        <section>
-            <img src="images/product5.jpeg" alt="Heritage Necklace" width="350">
-            <h3>Heritage Necklace</h3>
-            <p>Price: R 20,000</p>
-            <p>Material: 18K Gold vermeil on sterling silver with natural ruby and uncut diamond accents.</p>
-            <p>Craftsmanship: Handmade lattice patterns inspired by ancient South Indian temple carvings. Layered chains with traditional uncut diamonds and deep red rubies. Made by skilled family artisans in Jaipur.</p>
-        </section>
+        <div class="catalogue-wrapper">
+            <aside class="features-sidebar">
+                <h2>Features</h2>
+                <p>18K Gold Plated</p>
+                <p>Handmade Artistry</p>
+                <p>Ethically Sourced</p>
+            </aside>
 
-        <hr>
+            <section class="product-grid">
+                <!-- Product 1 -->
+                <article class="product-item">
+                    <img src="images/product5.jpeg" alt="Heritage Necklace">
+                    <h3>Heritage Necklace</h3>
+                    <p>Price: R 20,000</p>
+                    <p>Material: 18K Gold vermeil on sterling silver with natural ruby and uncut diamond accents.</p>
+                    <p>Craftsmanship: Handmade lattice patterns inspired by ancient South Indian temple carvings. Layered chains with traditional uncut diamonds and deep red rubies. Made by skilled family artisans in Jaipur.</p>
+                </article>
 
-        <!--Product 2-->
-        <section>
-            <img src="images/product4.jpeg" alt="Jhumka" width="350">
-            <h3>Temple Jhumka Earing</h3>
-            <p>Price: R 4,200</p>
-            <p>Material: 18K gold over sterling silver with clear cubic zirconia accents.</p>
-            <p>Craftsmanship: Handmade bell-shaped earrings with open lattice patterns inspired by Tamil Nadu temple architecture. Floral stud tops with crystal details and dangling gold beads. Made by skilled family artisans in Coimbatore.</p>
-        </section> 
+                <!-- Product 2 -->
+                <article class="product-item">
+                    <img src="images/product4.jpeg" alt="Jhumka">
+                    <h3>Temple Jhumka Earing</h3>
+                    <p>Price: R 4,200</p>
+                    <p>Material: 18K gold over sterling silver with clear cubic zirconia accents.</p>
+                    <p>Craftsmanship: Handmade bell-shaped earrings with open lattice patterns inspired by Tamil Nadu temple architecture. Floral stud tops with crystal details and dangling gold beads. Made by skilled family artisans in Coimbatore.</p>
+                </article>
 
-        <hr>
+                <!-- Product 3 -->
+                <article class="product-item">
+                    <img src="images/product1.jpeg" alt="Ancient Pattern Bangle">
+                    <h3>Meenakari Bangles</h3>
+                    <p>Price: R 3,600</p>
+                    <p>Material: 18K gold over brass with hand-painted enamel in green, red, and gold.</p>
+                    <p>Craftsmanship: Hand-painted floral patterns using traditional meenakari enamel technique. Each bangle is crafted by skilled enamel artists in Kolkata, known for fine detail work. Smooth gold interior for comfort.</p>
+                </article>
 
-        <!--Product 3-->
-        <section>
-            <img src="images/product1.jpeg" alt="Ancient Pattern Bangle" width="350">
-            <h3>Meenakari Bangles</h3>
-            <p>Price: R 3,600</p>
-            <p>Material: 18K gold over brass with hand-painted enamel in green, red, and gold.</p>
-            <p>Craftsmanship: Hand-painted floral patterns using traditional meenakari enamel technique. Each bangle is crafted by skilled enamel artists in Kolkata, known for fine detail work. Smooth gold interior for comfort.</p>
-        </section>
+                <!-- Product 4 -->
+                <article class="product-item">
+                    <img src="images/product2.jpeg" alt="Arya Anklet">
+                    <h3>Arya Anklet</h3>
+                    <p>Price: R 2,400</p>
+                    <p>Material: 18K gold over sterling silver with stamped coin charms.</p>
+                    <p>Craftsmanship: Delicate chain anklet with small hanging coin charms inspired by ancient Indian currency. Lightweight and adjustable. Handmade by family artisans in Coimbatore, known for fine chain work.</p>
+                </article>
 
-        <hr>
+                <!-- Product 5 -->
+                <article class="product-item">
+                    <img src="images/product3.jpeg" alt="Dynasty Ring">
+                    <h3>Dynasty Stack Ring</h3>
+                    <p>Price: R 2,900</p>
+                    <p>Material: 18K gold over sterling silver with four lab-created rubies.</p>
+                    <p>Craftsmanship: Four-stone floral ring with twisted band detail. Set with deep red stones inspired by Mughal-era jewellery. Handcrafted by skilled goldsmiths in Rajkot, Gujarat.</p>
+                </article>
 
-        <!--Product 4-->
-        <section>
-            <img src="images/product2.jpeg" alt="Arya Anklet" width="350">
-            <h3>Arya Anklet</h3>
-            <p>Price: R 2,400</p>
-            <p>Material: 18K gold over sterling silver with stamped coin charms.</p>
-            <p>Craftsmanship: Delicate chain anklet with small hanging coin charms inspired by ancient Indian currency. Lightweight and adjustable. Handmade by family artisans in Coimbatore, known for fine chain work.</p>
-        </section>
-
-        <hr>
-
-        <!--Product 5-->
-        <section>
-            <img src="images/product3.jpeg" alt="Dynasty Ring" width="350">
-            <h3>Dynasty Stack Ring</h3>
-            <p>Price: R 2,900</p>
-            <p>Material: 18K gold over sterling silver with four lab-created rubies.</p>
-            <p>Craftsmanship: Four-stone floral ring with twisted band detail. Set with deep red stones inspired by Mughal-era jewellery. Handcrafted by skilled goldsmiths in Rajkot, Gujarat.</p>
-        </section>
-
-        <hr>
-
-        <!--Product 6-->
-        <section>
-            <img src="images/product6.jpeg" alt="Men set" width="350">
-            <h3>Jaali Men Set</h3>
-            <p>Price: R 6,800</p>
-            <p>Material: 18K gold over sterling silver. Pendant necklace, signet ring, and link bracelet sold as a set.</p>
-            <p>Craftsmanship: Matching set with carved lattice patterns inspired by Mughal jali screens and ancient stepwell designs. Chunky chain links with smooth finish. Made by master artisans in Jaipur, known for bold statement pieces.</p>
-        </section>
+                <!-- Product 6 -->
+                <article class="product-item">
+                    <img src="images/product6.jpeg" alt="Men set">
+                    <h3>Jaali Men Set</h3>
+                    <p>Price: R 6,800</p>
+                    <p>Material: 18K gold over sterling silver. Pendant necklace, signet ring, and link bracelet sold as a set.</p>
+                    <p>Craftsmanship: Matching set with carved lattice patterns inspired by Mughal jali screens and ancient stepwell designs. Chunky chain links with smooth finish. Made by master artisans in Jaipur, known for bold statement pieces.</p>
+                </article>
+            </section>
+        </div>
     </main>
 
-    <hr>
-
-    <!--Footer with social media links and copyright - consistent across all pages-->
-    <footer>
+    <footer class="tarcotta-bg">
         <p>2026 | Auraaya Jewellery.</p>
-        <p>Instagram: <a href="https://www.instagram.com/Auraaya_Heritage target= "_blank">@Auraaya_Heritage</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/Auraaya_Heritage" target="_blank">@Auraaya_Heritage</a></p>
         <p>Facebook: <a href="https://www.facebook.com/AuraayaWearableHistory" target="_blank">Auraaya Wearable History</a></p>
         <p>Location: South Africa | India.</p>
     </footer>
-
 </body>
 </html>
