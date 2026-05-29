@@ -116,11 +116,11 @@ Dates: 18 May - 29 May
 Tasks: Identify breakpoints, use relative units. Responsive images, test and iterate 
 
 ​Part 3: Phase 1 - Functionality, JavaScript enhancement, SEO
-​Dates: 30 May – 02 June 2026
+​Dates: 01 May – 07 June 2026
 ​Tasks: Interactive elements, dynamic content. On-Page SEO, additional requests. 
 
 Part 3: Phase 2 - Form functionality and validation. GitHub repository 
-Dates: 03 June - 07 June 2026 
+Dates: 08 June - 19 June 2026 
 Tasks: Form elements, validation and submission. JavaScript form validation 
 ​
 8. Content Research and Sourcing 
@@ -147,7 +147,7 @@ Text Content: All brand copy and product descriptions are original, written to r
 
 Development Changelog
 
-​2026-04-12: Completed initial project proposal for Auraaya and defined heritage luxury objectives.
+​2026-04-14: Completed initial project proposal for Auraaya and defined heritage luxury objectives.
 
 ​2026-04-18: Finalized site navigation and low-fidelity wireframes for Homepage, About, and Product pages.
 
@@ -161,6 +161,51 @@ Development Changelog
 
 ​2026-04-28: Completed Part 1 documentation, asset sourcing, and the README file.
 
+2026-04-29: Final check and submit. 
+
+
+
+
+
+Part 2: Designing the Visuals (CSS Styling and Responsive Design)
+
+1. Project Status
+
+CSS Styling and Responsive Design have been successfully implemented. The website features a cohesive aesthetic using a warm gold, emerald, and terracotta palette.
+
+2. Responsive Approach
+
+To ensure the website is fully accessible across all devices, the following responsive design principles were applied:
+Media Queries: Implemented specific breakpoints to transition from a desktop-optimized multi-column layout to a streamlined single-column layout for mobile devices.  
+Relative Units: Used rem and em for typography and spacing to maintain proportional scaling across different screen sizes.  
+Fluid Layouts: Utilized percentages (%) for container and column widths, ensuring the content adapts fluidly to the viewport width.  
+
+3. Responsive Screenshot Evidence
+
+#Desktop 
+![Desktop View](images/desktop.png) 
+
+#Tablet 
+![ipad View](images/ipad.png) /* --- 1. GLOBAL RESET & BASE --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
+
+#Mobile 
+![Mobile View](images/mobile.png)
+
+
+3. Updated Changelog for part 2
+
+2026-05-01: Implemented external style.css file and linked all HTML pages.
+
+2026-05-05: Established base styles, including CSS reset for browser consistency, and set default typography (Playfair Display and Montserrat).
+
+2026-05-20: Implemented layout structure using Flexbox/CSS Grid for a clean, grid-based aesthetic.
+
+2026-05-20: Added visual styles including box-shadows and hover pseudo-classes for interactive elements.
+
+2026-05-24: Created media queries for tablet and mobile breakpoints to ensure navigation and image responsiveness.
+
+2026-05-24: Addressed Part 1 feedback:no feedback for part 1 
 
 
 ​10. References 
@@ -193,4 +238,8 @@ Ulanovsky, J. 2011. Montserrat. [Online]. Available at: <https://fonts.google.co
 Pinterest. 2026. Emerald Green Colour. [Online]. Available at: <https://www.pinterest.com/> [Accessed 12 April 2026]. 
 
 Pinterest. 2026. Gold Color. [Online]. Available at: <https://www.pinterest.com/> [Accessed 13 April 2026].
+
+Updated Reference part 2 
+
+Google Developers. 2026. Test your site with Lighthouse. [Online]. Available at: <https://developer.chrome.com/docs/lighthouse/overview/> [Accessed 28 May 2026].
 
