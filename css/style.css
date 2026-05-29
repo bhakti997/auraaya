@@ -1,0 +1,473 @@
+/* --- CENTERED TERRACOTTA BRANDING --- */
+.tarcotta-bg { 
+    background-color: #E2725B; 
+    color: white; 
+    padding: 40px 20px; 
+    text-align: center; /* Centers h1, nav, and all internal text */
+    width: 100%;
+}
+
+/* This targets EVERY link inside any element with the class tarcotta-bg */
+.tarcotta-bg a { 
+    color: white; 
+    text-decoration: underline; 
+    margin: 0 15px; 
+    display: inline-block; /* Ensures links respect margins and spacing */
+    font-size: 1.1rem;
+}
+
+/* --- ABOUT PAGE: STAIRCASE (LEFT TO RIGHT, LOW TO HIGH) --- */
+.page-about main { width: 90%; max-width: 1200px; margin: 60px auto;
+box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
+
+.page-about .mission-vision-artisans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: end; /* Aligns to bottom to create staircase */
+}
+
+/* Box Heights (Increased for better look) */
+.page-about .box-1 { height: 1000px; } 
+.page-about .box-2 { height: 1200px; } 
+.page-about .box-3 { height: 1400px; } 
+
+.page-about .feature-box {
+    padding: 40px;
+    background-color: rgba(159, 8, 6, 0.908);
+    border: 6px solid #D4AF37; /* Gold */
+    box-shadow: 0 0 20px 8px #0a6a2a; /* Emerald */
+    display: flex;
+    flex-direction: column;
+}
+
+.page-about .feature-box img { 
+    width: 100%; height: 300px; object-fit: cover; 
+    border: 3px solid #50C878; margin-bottom: 25px; 
+}
+
+.page-about .feature-box h2 { margin-bottom: 20px; }
+.page-about .feature-box p { font-size: 1.05rem; }
+
+/* --- MOBILE FIX --- */
+@media (max-width: 768px) {
+    .page-about .mission-vision-artisans { grid-template-columns: 1fr; }
+    .page-about .box-1, .page-about .box-2, .page-about .box-3 { height: auto; margin: 20px 0; }
+}
+
+
+
+
+
+
+
+
+
+
+/* --- product page--- */
+/* --- 1. GLOBAL RESET & BASE --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
+
+.page-products *, .page-products *::before, .page-products *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.page-products { 
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #fffaf0; 
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 2. HEADER & FOOTER (Terracotta) --- */
+.page-products header, 
+.page-products footer { 
+    background-color: #E2725B; 
+    color: #fff; 
+    padding: 2rem; 
+    text-align: center;
+}
+
+.page-products nav { margin-top: 1rem; }
+.page-products nav a { 
+    color: #fff; 
+    margin: 0 15px; 
+    text-decoration: underline; 
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+/* --- 3. MAIN CONTENT --- */
+.page-products main {
+    flex: 1;
+    max-width: 1000px; /* Fixed: was 100px */
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 20px 8px #ac0606; /* Added main shadow back */
+}
+
+/* --- 4. HERO SECTION --- */
+.page-products .hero-img {
+    box-shadow: 0 4px 15px #c93706;
+    width: 100%;
+    display: block;
+    border: 5px solid #D4AF37;
+}
+
+/* --- 5. CATALOGUE GRID --- */
+.page-products .catalogue-wrapper {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.page-products .features-sidebar {
+    border: 2px solid #D4AF37;
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.page-products .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+/* --- 6. PRODUCT FRAMES (Gold & Emerald) --- */
+.page-products .product-item {
+    border: 3px solid #D4AF37;
+    padding: 1.5rem;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.page-products .product-item img {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.page-products .product-item:hover {
+    border-color: #50C878;
+    box-shadow: 0 4px 15px #50C878;
+}
+
+/* --- 7. RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+    .page-products .catalogue-wrapper { grid-template-columns: 1fr; }
+    .page-products .product-grid { grid-template-columns: 1fr; }
+    .page-products main { width: 95%; padding: 1rem; }
+}
+
+
+
+
+
+
+
+
+/* --- index --- */
+/* --- 1. GLOBAL RESET & BASE --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
+
+*, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #fffaf0; 
+    color: #000000; 
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This ensures the page is at least full height */
+}
+
+/* --- 2. HEADER & FOOTER --- */
+header, footer {
+    background-color: #E2725B; 
+    color: #FFFFFF; 
+    padding: 2rem 1rem; 
+    text-align: center; 
+    font-family: 'Playfair Display', serif;
+    flex-shrink: 0; /* Prevents them from being squished */
+}
+
+header h1, footer p { color: #FFFFFF; margin-bottom: 0.5rem; }
+
+header nav a, footer a { 
+    color: #FFFFFF; 
+    margin: 0 10px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-family: 'Playfair Display', serif;
+}
+
+header nav a { text-decoration: underline !important; }
+
+/* --- 3. MAIN CONTENT --- */
+main {
+    flex: 1; /* Pushes the footer to the bottom */
+    box-shadow: 0 0 20px 8px #ac0606; 
+    max-width: 1000px;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1, h2, h3, h4, legend {
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+    margin: 1.5rem 0 1rem;
+}
+
+/* --- 4. IMAGE CLASSES (YOUR SHADOWS & BORDERS) --- */
+.hero-image {
+    display: block;
+    margin: 2rem auto;
+    width: 95%;
+    max-width: 1000px;
+    border: 5px solid #D4AF37;
+    box-shadow: 0 0 15px #D4AF37, 0 0 30px #50C878;
+    transition: 0.3s;
+}
+
+.hero-image:hover {
+    border-color: #50C878;
+    box-shadow: 0 0 20px #50C878, 0 0 40px #D4AF37;
+}
+
+.product-image {
+    display: block;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 350px;
+    border: 5px solid #D4AF37;
+    box-shadow: 0 0 10px #D4AF37, 0 0 20px #50C878;
+    transition: 0.3s;
+}
+
+.product-image:hover {
+    border-color: #50C878;
+    box-shadow: 0 0 15px #50C878, 0 0 30px #D4AF37;
+}
+
+/* --- 5. PRODUCT CARDS --- */
+.product-card {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border: 3px solid #D4AF37;
+    text-align: center;
+}
+
+/* --- 6. BUTTONS --- */
+button, input[type="submit"] {
+    padding: 1.2rem 2.5rem;
+    background-color: #FFFFFF;
+    border: 3px solid #D4AF37;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #50C878;
+    color: #FFFFFF;
+    border-color: #50C878;
+}
+
+/* --- 7. RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 600px) {
+    main { padding: 1rem; width: 95%; margin: 1rem auto; }
+    .product-card { width: 95%; padding: 1rem; }
+    button { width: 90%; padding: 0.8rem; font-size: 1rem; margin: 5px; }
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+/* --- contact--- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #fffaf0; 
+    color: #000000; 
+    line-height: 1.6;
+}
+
+/* --- 2. GLOBAL HEADER & FOOTER (Identical & White Text) --- */
+header, footer { 
+    background-color: #E2725B; 
+    color: #FFFFFF; 
+    padding: 3rem 2rem; 
+    text-align: center; 
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+header h1, footer p { color: #FFFFFF; margin-bottom: 0.5rem; }
+
+header nav a, footer a { 
+    color: #FFFFFF; 
+    margin: 0 15px; 
+    text-decoration: none; 
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- 3. MAIN CONTENT (Centered) --- */
+main {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    text-align: center; /* Centers all text/images */
+}
+
+h1, h2, h3, h4, legend {
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+    margin: 1.5rem 0 1rem;
+}
+
+/* --- 4. GLOBAL IMAGES (Framed with Dual Shadows) --- */
+.framed-image {
+    display: block;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 700px;
+    border: 5px solid #D4AF37; /* Gold */
+    box-shadow: 0 0 10px #D4AF37, 0 0 20px #50C878; /* Emerald + Gold */
+    transition: 0.3s;
+}
+
+.framed-image:hover {
+    border-color: #50C878;
+    box-shadow: 0 0 15px #50C878, 0 0 30px #D4AF37;
+}
+
+/* --- 5. BUTTONS (Substantial & Centered) --- */
+button, input[type="submit"] {
+    padding: 1.2rem 2.5rem; /* Larger, more "button-like" */
+    background-color: #FFFFFF;
+    border: 3px solid #D4AF37;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #095f25;
+    color: #FFFFFF;
+    border-color: #034218;
+}
+
+/* --- 6. FORMS (Centered but readable) --- */
+form {
+    display: inline-block;
+    text-align: left; /* Keep labels readable */
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem 0;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+/* --- 7. RESPONSIVE --- */
+@media (max-width: 768px) {
+    header, footer { padding: 1.5rem; }
+    .framed-image { width: 95%; }
+    button { width: 100%; }
+}
+
+
+
+
+
+
+
+
+/* payment */
+.page-payment header { 
+    background-color: #E2725B; /* Terracotta */
+    padding: 2rem 1rem; 
+    text-align: center; 
+    font-family: 'Playfair Display', serif;
+}
+
+.page-payment header h1 {
+    color: #FFFFFF; /* Auraaya text changed to WHITE */
+    font-size: 3rem 2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.page-payment header nav a { 
+    color: #FFFFFF; /* Nav links changed to WHITE */
+    margin: 0px 5px; 
+    text-decoration: none; 
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem 2rem;
+}
+
+/* --- 2. BODY TEXT FIX (Dark/Black for Readability) --- */
+.page-payment { 
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #fffaf0; 
+    color: #333333; /* Dark Grey/Black for body text */
+    line-height: 1.6;
+}
+
+/* --- 3. FOOTER FIX (White Text for Contrast) --- */
+.page-payment footer { 
+    background-color: #E2725B; /* Terracotta */
+    color: #FFFFFF; /* Footer text changed to WHITE */
+    padding: 3rem 2rem; 
+    text-align: center; 
+    font-family: 'Playfair Display', serif;
+}
+
+.page-payment footer a { 
+    color: #FFFFFF; /* Footer links changed to WHITE */
+}
