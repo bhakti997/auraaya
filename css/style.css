@@ -2,18 +2,11 @@
 .tarcotta-bg { 
     background-color: #E2725B; 
     color: white; 
-    padding: 40px 20px; 
-    text-align: center; /* Centers h1, nav, and all internal text */
-    width: 100%;
 }
 
 /* This targets EVERY link inside any element with the class tarcotta-bg */
 .tarcotta-bg a { 
     color: white; 
-    text-decoration: underline; 
-    margin: 0 15px; 
-    display: inline-block; /* Ensures links respect margins and spacing */
-    font-size: 1.1rem;
 }
 
 /* ABOUT PAGE: STAIRCASE */
@@ -63,21 +56,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
 /* product page */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
 
-.page-products nav a { 
-    color: #fff; 
-    margin: 0 15px; 
-    text-decoration: none; /* Changed from underline to none */
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    border-bottom: 2px solid #fff; /* This adds the line */
-    padding-bottom: 2px; /* Adds a little space between the text and the line */
-}
 
-.page-products *, .page-products *::before, .page-products *::after { 
-    box-sizing: border-box; 
-    margin: 0; 
-    padding: 0; 
-}
 
 .page-products { 
     font-family: 'Montserrat', sans-serif; 
@@ -179,25 +158,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
 /* index */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
 
-/* 1. This rule only applies to the Index page */
-.page-index header nav a {
-    color: #FFFFFF;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Playfair Display', serif;
-    border-bottom: 2px solid #FFFFFF; /* Line only here */
-    padding-bottom: 2px;
-}
 
-header nav a {
-    color: #FFFFFF;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Playfair Display', serif;
-    border-bottom: none; /* No line here */
-}
 
 *, *::before, *::after { 
     box-sizing: border-box; 
@@ -231,17 +192,7 @@ header, footer {
     flex-shrink: 0; /* Prevents them from being squished */
 }
 
-header h1, footer p { color: #FFFFFF; margin-bottom: 0.5rem; }
 
-header nav a, footer a { 
-    color: #FFFFFF; 
-    margin: 0 10px; 
-    text-decoration: none; 
-    font-weight: bold; 
-    font-family: 'Playfair Display', serif;
-}
-
-header nav a { text-decoration: underline ; }
 
 /* MAIN CONTENT */
 main {
@@ -322,7 +273,7 @@ button:hover, input[type="submit"]:hover {
 }
 
 /* RESPONSIVE MEDIA QUERIES  */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     main { padding: 1rem; width: 95%; margin: 1rem auto; }
     .product-card { width: 95%; padding: 1rem; }
     button { width: 90%; padding: 0.8rem; font-size: 1rem; margin: 5px; }
@@ -345,25 +296,7 @@ body {
     line-height: 1.6;
 }
 
-/* GLOBAL HEADER & FOOTER */
-header, footer { 
-    background-color: #E2725B; 
-    color: #FFFFFF; 
-    padding: 3rem 2rem; 
-    text-align: center; 
-    font-weight: bold;
-    font-family: 'Playfair Display', serif;
-}
 
-header h1, footer p { color: #FFFFFF; margin-bottom: 0.5rem; }
-
-header nav a, footer a { 
-    color: #FFFFFF; 
-    margin: 0 15px; 
-    text-decoration: none; 
-    font-size: 1.1rem;
-    font-family: 'Playfair Display', serif;
-}
 
 /* MAIN CONTENT (Centered) */
 main {
@@ -457,21 +390,6 @@ input[type="text"], input[type="email"], textarea {
     color: #333;
 }
 
-/* --- 2. HEADER & FOOTER (Terracotta Theme) --- */
-.page-products header, 
-.page-products footer { 
-    background-color: #E2725B; 
-    color: #fff; 
-    padding: 50px 30px; 
-}    
-
-.page-products nav { margin-top: 1rem; text-align: center; }
-.page-products nav a { 
-    color: #fff; 
-    margin: 0 15px; 
-    text-decoration: none; 
-    font-family: 'Playfair Display', serif;
-}
 
 /* --- 3. HERO SECTION (With Gold Frame & Shadow) --- */
 .page-products .hero-img {
@@ -538,6 +456,86 @@ input[type="text"], input[type="email"], textarea {
 }
 
 /* Mobile: single column view */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .page-products .product-grid { grid-template-columns: 1fr; }
+}
+
+
+
+
+
+/* AURAAYA PERFECT FONT & HEIGHT LOCK */
+
+/* 1. VERTICAL HEIGHT & LAYOUT LOCK */
+header, 
+.page-products header,
+.page-index header {
+    height: 180px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+footer, 
+.page-products footer,
+.page-index footer {
+    height: 150px; /* Absolute identical height across all pages */
+    padding: 1rem 1.5rem; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 2. BRAND NAME / PRIMARY HEADING STYLES (Playfair Display) */
+/* Force the Auraaya brand text/headings in header and footer to a uniform, clean size */
+header h1, .page-index header h1, .page-products header h1,
+footer h1, footer h2, footer h3, header h2, header h3,
+h1, h2, h3, h4, legend {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem; /* Forces the brand/header titles to a consistent, elegant size */
+    color: #FFFFFF;
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+    text-transform: uppercase; /* Optional: Makes the brand name look premium */
+}
+
+/* Overriding main content headings to be black */
+main h1, main h2, main h3, main h4 {
+    color: #000000;
+}
+
+/* 3. NAVIGATION & LINKS (Montserrat Font) */
+/* This controls Home, About, Contact, Payment links precisely */
+header nav a, footer a, .tarcotta-bg a, .page-products nav a, .page-index header nav a,
+footer span, footer div, footer p { 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.05rem ; /* Keeps all navigation links exactly identical in scale */
+    color: #FFFFFF; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    display: inline-block; 
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent; 
+    transition: all 0.3s ease;
+}
+
+/* 4. HOVER EFFECTS */
+header nav a:hover, footer a:hover, .page-products nav a:hover {
+    border-bottom: 2px solid #FFFFFF; 
+    opacity: 0.9;
+}
+
+/* 5. MOBILE RESPONSIVE BYPASS */
+@media (max-width: 768px) {
+    header, .page-products header, .page-index header,
+    footer, .page-products footer, .page-index footer {
+        height: auto;
+        padding: 1.5rem 1rem;
+    }
 }
