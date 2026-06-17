@@ -284,6 +284,10 @@ button:hover, input[type="submit"]:hover {
 
 
 
+
+
+
+
 /* contact */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
 
@@ -355,13 +359,13 @@ form {
     max-width: 500px;
     margin: 2rem 0;
 }
-
 input[type="text"], input[type="email"], textarea {
     width: 100%;
-    padding: 10px;
+    max-width: 400px;
+    padding: 8px;
     margin-top: 5px;
-    border: 1px solid #ccc;
 }
+
 
 /* --- 7. RESPONSIVE --- */
 @media (max-width: 768px) {

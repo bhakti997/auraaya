@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Auraaya Jewellery for inquiries about our 18K gold-plated wearable history pieces. Reach our customer support team in South Africa and India.">
     <title>Auraaya | Contact</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,7 +22,7 @@
     </nav>
 </header>
 
-    <img src="images/contact1.jpeg" alt="contact" class="framed-image">
+    <img src="images/contact1.jpeg" alt="Elegant display of Auraaya jewellery" class="framed-image">
     
     <main>
         <h1>Customer Support and Contact</h1>
@@ -31,22 +32,27 @@
             <h2>Get in Touch</h2>
             <p><strong>Phone:</strong> +27 69 274 2015</p>
             <p><strong>Email:</strong> <a href="mailto:support@auraaya.com">support@auraaya.com</a></p>
-            <img src="images/contactus.jpeg" alt="Our stores" class="framed-image">            
+            <img src="images/contactus.jpeg" alt="Our physical store location" class="framed-image">            
             <p><strong>Location:</strong> South Africa: 12 High Street, Melrose Arch, Johannesburg, 2076.</p>
             <p><strong>Location:</strong> India: 45 Apollo Bandar, Colaba, Mumbai, Maharashtra 400001.</p>
         </section>
 
         <section id="contact-form">
             <h2>Send a Message</h2>
-            <form>
+            <form id="contactForm">
                 <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+                
                 <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                
                 <label for="message">Your Message:</label><br>
-                <textarea id="message" name="message" rows="5" placeholder="How can we help you?"></textarea><br><br>
+                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea><br><br>
+                
                 <input type="submit" value="Send Inquiry">
             </form>
+            
+            <div id="formFeedback" aria-live="polite" style="margin-top: 15px; font-weight: bold;"></div>
         </section>
 
         <section id="faq">
@@ -61,7 +67,7 @@
             </div>
             <div>
                 <h3>Response Time</h3>
-                <p>We value your time. A member of our contact team will reach out to you within 24 hours</p>
+                <p>We value your time. A member of our contact team will reach out to you within 24 hours.</p>
             </div>
         </section>
     </main>
@@ -70,7 +76,9 @@
         <p>2026 | Auraaya Jewellery.</p>
         <p>Instagram: <a href="https://www.instagram.com/Auraaya_Heritage" target="_blank">@Auraaya_Heritage</a></p>
         <p>Facebook: <a href="https://www.facebook.com/AuraayaWearableHistory" target="_blank">Auraaya Wearable History</a></p>
+        <p>Location: South Africa | India.</p>
     </footer>
 
+    <script src="javascript/js.js"></script>
 </body>
 </html>
