@@ -31,7 +31,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     feedback.textContent = "Sending your message...";
 
     // Simulate an AJAX response delay (the "sending" part)
-    setTimeout(function() {
+    setTimeout(function (event) {
         feedback.textContent = "Thank you, " + name + "! Your Auraaya enquiry has been sent successfully.";
         document.getElementById('contactForm').reset(); // Clear the form after success
     }, 1500);

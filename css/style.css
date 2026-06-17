@@ -67,23 +67,7 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
     flex-direction: column;
 }
 
-/* HEADER & FOOTER */
-.page-products header, 
-.page-products footer { 
-    background-color: #E2725B; 
-    color: #fff; 
-    padding: 2rem; 
-    text-align: center;
-}
 
-.page-products nav { margin-top: 1rem; }
-.page-products nav a { 
-    color: #fff; 
-    margin: 0 15px; 
-    text-decoration: underline; 
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-}
 
 /* MAIN CONTENT */
 .page-products main {
