@@ -261,7 +261,8 @@ GitHub Repository updates include multiple descriptive commits for each new feat
 Website Deployment was completed on Netlify free hosting platform. The site is now live and accessible on desktop, tablet, and mobile devices. The deployment link will be submitted with the final submission on the Learning Management System.
 
 6. Updated Changelog for Part 3
-On 1 June 2026 accordions, tabs, and smooth scroll JavaScript were implemented to improve user experience and navigation.
+On 3 June 2026 feedback added for more content. 
+On 2 June 2026 accordions, tabs, and smooth scroll JavaScript were implemented to improve user experience and navigation.
 On 3 June 2026 http://Leaflet.js interactive map was added to the Contact page with a marker for the Johannesburg boutique location.
 On 5 June 2026 an image gallery lightbox was created for product detail viewing on the Products page.
 On 7 June 2026 dynamic product search and filter functionality was built to allow real-time filtering of jewellery items.
