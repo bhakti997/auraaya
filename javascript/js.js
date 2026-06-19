@@ -1,6 +1,4 @@
-// ==========================
 // CONTACT PAGE
-// ==========================
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
@@ -42,11 +40,9 @@ if (contactForm) {
     });
 }
 
-// ==========================
 // CART / PRODUCTS / PAYMENT
-// ==========================
 
-// --- ADD TO CART (call this from product buttons) ---
+// ADD TO CART (call this from product buttons)
 function addToCart(name, price) {
     let cart = JSON.parse(localStorage.getItem('myCart')) || [];
     cart.push({ name: name, price: parseFloat(price) });
@@ -54,7 +50,7 @@ function addToCart(name, price) {
     showToast(name, price);
 }
 
-// --- TOAST POPUP ---
+// TOAST POPUP 
 function showToast(name, price) {
     const toast = document.getElementById("toast");
     const title = document.getElementById("toast-title");
@@ -70,7 +66,7 @@ function showToast(name, price) {
     }
 }
 
-// --- RENDER CART TABLE (runs on Payment Page only) ---
+// RENDER CART TABLE (runs on Payment Page only)
 function renderCartTable() {
     const tableBody = document.getElementById('cart-table-body');
     const totalDisplay = document.getElementById('total-price');
@@ -97,10 +93,10 @@ function renderCartTable() {
     }
 }
 
-// --- RUN ON PAGE LOAD ---
+// RUN ON PAGE LOAD
 document.addEventListener('DOMContentLoaded', renderCartTable);
 
-// --- CHECKOUT FORM SUBMIT ---
+// CHECKOUT FORM SUBMIT 
 const checkoutForm = document.getElementById('checkoutForm');
 
 if (checkoutForm) {
@@ -116,7 +112,7 @@ if (checkoutForm) {
         // Refresh the cart table so it shows empty
         renderCartTable();
 
-        // Optional: reset the shipping form fields
+        // reset the shipping form fields
         checkoutForm.reset();
     });
 }
