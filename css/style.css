@@ -57,7 +57,6 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
 
 
-
 .page-products { 
     font-family: 'Montserrat', sans-serif; 
     background-color: #fffaf0; 
@@ -66,7 +65,6 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
     display: flex;
     flex-direction: column;
 }
-
 
 
 /* MAIN CONTENT */
@@ -139,9 +137,11 @@ box-shadow: 0 0 20px 8px #ac0606; /* Emerald */ }
 
 
 
+
+
+
 /* index */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
-
 
 
 *, *::before, *::after { 
@@ -372,69 +372,103 @@ input[type="text"], input[type="email"], textarea {
     padding: 0; 
 }
 
-.page-products { 
+/* 1. Global Reset (Ensures consistent box sizing) */
+.page-products *, .page-payment *, 
+.page-products *::before, .page-payment *::before, 
+.page-products *::after, .page-payment *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+/* 2. Shared Body Styles */
+.page-products, .page-payment { 
     font-family: 'Montserrat', sans-serif; 
     background-color: #fffaf0; 
-    color: #333;
+    color: #333; /* This ensures text  is dark */
 }
 
-
-/* --- 3. HERO SECTION (With Gold Frame & Shadow) --- */
-.page-products .hero-img {
-    box-shadow: 0 4px 15px #c93706; /* Hero shadow */
-    width: 100%;
-    height: 20%;
-    object-fit: cover;
-    display: block;
-    border: 5px solid #D4AF37; /* Gold Frame */
-}
-
-/* --- 4. LAYOUT STRUCTURE (Grid) --- */
-.page-products main {
-    max-width: 1000px; /* Adjusted to professional laptop width */
+/* 3. Main Container Styles (Applied to both pages) */
+.page-products main, .page-payment main {
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
-    box-shadow: 0 0 20px 8px #ac0606; /* Main container shadow */
+    box-shadow: 0 0 20px 8px #ac0606;
     background: #fff;
 }
 
-.page-products .catalogue-wrapper {
-    display: grid;
-    grid-template-columns: 250px 1fr; /* Sidebar + Product Grid layout */
-    gap: 2rem;
-    margin-top: 2rem;
+/* Make fieldset legends readable */
+.page-payment fieldset {
+    border: 2px solid #D4AF37;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
-.page-products .features-sidebar {
-    border: 2px solid #D4AF37; /* Gold sidebar border */
-    padding: 1.5rem;
-    height: fit-content;
+.page-payment legend {
+    color: #333; /* Dark gray/black text */
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 10px;
 }
 
-.page-products .product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2-column grid for products */
-    gap: 1.5rem;
+/* Style for your action buttons */
+.action-buttons button {
+    padding: 15px 30px;        /* 15px top/bottom, 30px left/right (adjust to make them bigger) */
+    font-size: 18px;          /* Makes the text inside larger */
+    margin: 10px;             /* Adds space between the buttons */
+    cursor: pointer;          /* Makes them feel clickable */
+    background-color: #D4AF37;   /* White background */
+    color: rgb(14, 12, 12);
+    border: 2px solid #D4AF37; /* Gold border */
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
 }
 
-/*  PRODUCT FRAMES (Gold & Emerald Hover) */
-.page-products .product-item {
-    border: 3px solid #D4AF37; /* Gold Frame */
-    padding: 1.5rem;
-    background: #fff;
-    transition: all 0.3s ease; /* Smooth transition for hover */
+/* Add a hover effect so they look interactive */
+.action-buttons button:hover {
+    background-color: #D4AF37; /* Gold background on hover */
+    color: white;             /* White text on hover */
 }
 
-.page-products .product-item img {
-    width: 100%;
-    height: auto;
-    display: block;
+/* Style for the Complete Purchase button */
+.checkout-btn {
+    width: 100%;             /* Makes the button stretch the full width of the form */
+    padding: 18px;           /* Makes it nice and tall/large */
+    font-size: 20px;         /* Larger text */
+    background-color: #024e02; /* Matches your Terracotta theme */
+    color: rgb(14, 12, 12);
+    border: 2px solid #D4AF37; /* Gold border */
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #9b0d06; /* A slightly darker shade when you hover */
+}
+
+/* 4. Ensure Headings are readable */
+h1, h2, h3 {
+    color: #333; /* Explicitly set to dark gray/black */
+    font-family: 'Playfair Display', serif;
     margin-bottom: 1rem;
 }
 
-.page-products .product-item:hover {
-    border-color: #50C878; /* Emerald green border on hover */
-    box-shadow: 0 4px 15px #50C878; /* Emerald shadow on hover */
+/* 5. Wireframe Box Styling */
+.wireframe-box {
+    border: 2px solid #D4AF37;
+    padding: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* 6. Footer (Ensures footer text is readable) */
+.tarcotta-bg {
+    background-color: #E2725B;
+    color: #ffffff; /* Footer text should be white */
+    padding: 1rem;
+    text-align: center;
 }
 
 /* RESPONSIVE DESIGN */
@@ -526,4 +560,157 @@ header nav a:hover, footer a:hover, .page-products nav a:hover {
         height: auto;
         padding: 1.5rem 1rem;
     }
+}
+
+
+
+
+
+
+/* notifcations */
+.toast {
+  visibility: hidden;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 340px;
+  background-color: #fcfaf5; /* Cream bg */
+  border: 1px solid #e8e0d5;
+  border-radius: 6px;
+  padding: 18px 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  z-index: 1000;
+  font-family: 'Montserrat', sans-serif;
+  
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast-content { 
+  display: flex; 
+  align-items: flex-start; 
+  gap: 14px; 
+}
+
+/* GOLD 'A' like in your pic - no circle bg */
+.toast-logo-css {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 400;
+  color: #c5a059; /* Gold */
+  line-height: 1;
+  padding-top: 2px;
+}
+
+/* Text styling */
+.toast-text strong {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: #222;
+}
+
+.toast-text span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.toast-text small {
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.4;
+}
+
+/* GOLD trolley + footer */
+.toast-footer { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  margin-top: 12px; 
+}
+
+.toast-cart-css {
+  font-size: 22px;
+  color: #c5a059; /* Gold trolley to match A */
+}
+
+.view-cart-btn {
+  background-color: #c5a059; /* Gold button */
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-cart-btn:hover {
+  background-color: #2d5a27; /* Emerald on hover */
+}
+
+
+
+
+/* Style for all add-to-cart buttons */
+button {
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #E3735E; /* Terracotta */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 100%; /* Makes them a good size */
+    margin-top: 10px;
+}
+.toast {
+    visibility: hidden;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #fdf5e6;
+    border: 2px solid #E3735E;
+    padding: 20px;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: visibility 0.3s, opacity 0.3s;
+    opacity: 0;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.toast {
+    visibility: hidden;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 300px;        /* Set a specific width */
+    height: auto;        /* Let it grow only as much as needed */
+    background-color: #fdf5e6;
+    border: 2px solid #E3735E;
+    padding: 15px;       /* Reduced padding to make it smaller */
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    transition: visibility 0.3s, opacity 0.3s;
+    opacity: 0;
+}
+
+/* This fixes the button size in your product cards */
+.product-card button, .product-item button {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    cursor: pointer;
 }
