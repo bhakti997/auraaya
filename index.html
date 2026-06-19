@@ -24,17 +24,21 @@
     <main>
         <section class="hero-section">
             <img src="images/heroimage3.jpeg" alt="UNVEIL OUR HERITAGE" class="hero-image">
-            <h2>New Unique pieces</h2>
+            <h2>Explore Our Latest Handcrafted Gold Jewellery</h2>
+            <meta name="description" content="Explore Our Latest Handcrafted Gold Jewellery.">
+            <meta name="keywords" content="handcrafted gold jewellery, gold jewellery.">
         </section>
 
         <section class="product-column">
             <article class="product-card">
-                <img src="images/main1.jpeg" alt="Nose Ring" class="product-image">
-                <h4>Nose Ring</h4>
-                <p>Price: R 1,850</p>
-                <p>Material: 18K gold over sterling silver with a single lab-created ruby.</p>
-                <p>Craftsmanship: Delicate floral nose pin with curved hook design.</p>
+                 <img src="images/main1.jpeg" alt="Nose Ring" class="product-image">
+                 <h4>Nose Ring</h4>
+                 <p>Price: R 1,850</p>
+                 <p>Material: 18K gold over sterling silver with a single lab-created ruby.</p>
+                 <p>Craftsmanship: Delicate floral nose pin with curved hook design.</p>
+                 <button onclick="addToCart('Nose Ring',' 1850')">Add to Cart</button>
             </article>
+
 
             <article class="product-card">
                 <img src="images/main2.jpeg" alt="Hoops" class="product-image">
@@ -42,7 +46,10 @@
                 <p>Price: R 3,800</p>
                 <p>Material: 18K gold over sterling silver with lab-created ruby accents.</p>
                 <p>Craftsmanship: Textured gold hoops with carved detailing.</p>
+                <button onclick="addToCart('Queen Hoop Earings',' 3800')">Add to Cart</button>
             </article>
+
+
 
             <article class="product-card">
                 <img src="images/main3.jpeg" alt="Hand Chain" class="product-image">
@@ -50,7 +57,9 @@
                 <p>Price: R 5,400</p>
                 <p>Material: 18K gold over sterling silver with lab-created rubies.</p>
                 <p>Craftsmanship: Bridal hand chain with two floral clusters.</p>
+                <button onclick="addToCart('Hand Chain',' 5400')">Add to Cart</button>
             </article>
+        
 
             <article class="product-card">
                 <img src="images/main4 .jpeg" alt="Turquise Set" class="product-image">
@@ -58,9 +67,8 @@
                 <p>Price: R 6,800</p>
                 <p>Material: 18K gold over sterling silver with turquoise.</p>
                 <p>Craftsmanship: Matching lattice pendant, wide band ring, and link bracelet.</p>
+                <button onclick="addToCart('Turquise Set',' 6800')">Add to Cart</button>
             </article>
-        </section>
-    </main>
 
     <footer>
         <p>2026 | Auraaya Jewellery.</p>
@@ -68,6 +76,22 @@
         <p>Facebook: <a href="https://www.facebook.com/AuraayaWearableHistory" target="_blank">Auraaya Wearable History</a></p>
         <p>Location: South Africa | India.</p>
     </footer>
+
+    <div id="toast" class="toast">
+    <div class="toast-content">
+        <div class="toast-logo-css">A</div> 
+        <div class="toast-text">
+            <strong id="toast-title"></strong><br>
+            <span id="toast-price"></span><br>
+            <small>Item successfully added to your cart</small>
+        </div>
+    </div>
+    <div class="toast-footer">
+        <div class="toast-cart-css">🛒</div> 
+        <button class="view-cart-btn" onclick="window.location.href='payment.html'">VIEW CART</button>
+    </div>
+</div>
     
+    <script src="javascript/js.js"></script>
 </body>
 </html>
