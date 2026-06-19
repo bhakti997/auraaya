@@ -21,11 +21,11 @@
     </header>
 
     <main>
-        <h1>Shopping cart and secure checkout</h1>
+        <h1>Shopping Cart & Secure Checkout</h1>
 
-        <!-- Product Section -->
+        <!-- Single Product Section -->
         <section id="cart-summary" class="wireframe-box">
-            <h3>Product</h3>
+            <h3>Order Summary</h3>
             <table border="1" width="100%">
                 <thead>
                     <tr>
@@ -35,57 +35,41 @@
                         <th>Total</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="cart-table-body">
                     <tr>
-                        <td>No item</td>
-                        <td>-</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td colspan="4" style="text-align:center; padding:30px; color:#777;">Your cart is empty 💎</td>
                     </tr>
                 </tbody>
             </table>
+
+            <div id="payment-summary" style="margin-top: 20px;">
+                <h3>Total: R <span id="total-price">0.00</span></h3>
+            </div>
         </section>
 
-        <!-- Total Section -->
-        <section id="total-section" class="wireframe-box">
-            <h3>Total: <strong>R 0</strong></h3>
-        </section>
-
-        <!-- Navigation Buttons -->
-        <div class="action-buttons">
+        <!-- Navigation -->
+        <div class="action-buttons" style="margin: 20px 0;">
             <button onclick="window.location.href='products.html'">Continue shopping</button>
-            <button>Proceed to secure checkout</button>
+            <button onclick="document.getElementById('checkout').scrollIntoView({behavior: 'smooth'})">Proceed to secure checkout</button>
         </div>
 
-        <!-- Payment Options & Checkout -->
+        <!-- Checkout Section -->
         <section id="checkout" class="wireframe-box">
-            <h3>Payment options</h3>
-            <form action="#" method="post">
+            <form id="checkoutForm" action="#" method="post">
                 <fieldset>
                     <legend>Shipping Information</legend>
-                    <p>
-                        <label for="address">Street Address:</label><br>
-                        <input type="text" id="address" name="address" required>
-                    </p>
-                    <p>
-                        <label for="city">City:</label><br>
-                        <input type="text" id="city" name="city" required>
-                    </p>
+                    <p><label for="address">Street Address:</label><br><input type="text" id="address" name="address" required></p>
+                    <p><label for="city">City:</label><br><input type="text" id="city" name="city" required></p>
                 </fieldset>
 
                 <fieldset>
                     <legend>Payment Method</legend>
-                    <p>
-                        <input type="radio" id="card" name="payment" value="credit-card">
-                        <label for="card">Credit/Debit Card (Secure Gateway)</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="eft" name="payment" value="eft">
-                        <label for="eft">Secure Instant EFT</label>
-                    </p>
+                    <p><input type="radio" id="card" name="payment" value="credit-card"><label for="card">Credit/Debit Card</label></p>
+                    <p><input type="radio" id="eft" name="payment" value="eft"><label for="eft">Secure Instant EFT</label></p>
                 </fieldset>
-                <button type="submit">Complete Purchase</button>
+                <button type="submit" class="checkout-btn">Complete Purchase</button>
             </form>
+            <p id="purchaseMessage" style="color:red; font-weight:bold;"></p>
             <p><em>SSL Secured Checkout | 100% Authentic Heritage Jewellery</em></p>
         </section>
     </main>
@@ -96,6 +80,7 @@
         <p>Facebook: <a href="https://www.facebook.com/AuraayaWearableHistory" target="_blank">Auraaya Wearable History</a></p>
         <p>Location: South Africa | India.</p>
     </footer>
-
+ 
+<script src="javascript/js.js"></script>
 </body>
 </html>
