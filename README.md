@@ -222,6 +222,56 @@ Implemented external style.css file and linked all HTML pages.
 2026-05-29: Final checks before submission. 
 
 
+
+
+
+ Part 3: Enhancing Functionality and SEO
+
+ 1. Project Status
+Part 3 functionality and SEO enhancements have been successfully completed for Auraaya. The website now includes interactive elements, form validation, dynamic content loading, and full on-page SEO optimization. All edits made from Part 2 feedback and new Part 3 features are recorded in detail in the changelog section below as required by the module brief.
+
+ 2. Functionality Enhancements
+
+Interactive Elements were added to improve user experience. Accordions were implemented on the About Us page for the FAQ section using JavaScript. Users can click to expand and collapse answers without reloading the page. Tabs were added to the Products page to allow switching between Minakari and Kundan collections dynamically. CSS transitions and hover animations were applied to product images and buttons to create smooth interactions. Smooth scrolling was added to all navigation links for a better user flow.
+
+Interactive Maps were integrated using http://Leaflet.js on the Contact Us page. The map displays the Auraaya boutique location in Johannesburg with a marker and popup containing the store name and address. This supports local SEO and helps customers find the physical location.
+
+Gallery Lightbox was implemented on the Products page. When users click on any product image, it opens in a larger modal view overlay. This allows customers to see jewellery details clearly without leaving the product page.
+
+The shopping cart also updates dynamically using JavaScript and localStorage without requiring a page refresh.
+
+3. Search Engine Optimization
+
+On-Page SEO was applied across all five pages. Each page now has a unique title tag with relevant keywords such as Auraaya, 18K Gold, and Heritage Jewellery South Africa. Meta descriptions were written, staying within 150 to 160 characters and describing the brand and products clearly. Meta keywords were added including gold jewellery, heritage jewellery, 18K gold, and Indian jewellery SA. Header tags follow a proper H1 to H3 hierarchy to structure content for search engines. All images were optimized with descriptive filenames like http://kundan-necklace-18k.jpg and meaningful alt text for accessibility and SEO. The website remains fully mobile-friendly with responsive breakpoints carried over from Part 2.
+
+Technical SEO additions include a http://robots.txt file to guide search engine crawlers on which pages to index. A http://sitemap.xml file was created listing all page URLs to help search engines understand the site structure. Page speed was improved by compressing images and using efficient CSS and JavaScript. Security measures include client-side form validation and HTTPS readiness for deployment.
+
+4. Form Functionality and Validation
+
+The Contact Form on http://contact.html allows customers to send general messages and support enquiries. It includes fields for full name, email address, phone number, message type dropdown, and a message textarea. HTML5 and JavaScript validation ensure all required fields are filled, the email is in correct format, and the phone number contains 10 digits. After successful submission, a confirmation message displays and the form resets automatically.
+
+The Enquiry Form on http://enquiry.html is for product enquiries, custom orders, and wholesale or volunteer applications. It includes fields for name, email, enquiry type dropdown, product interest, and message. JavaScript validation checks all inputs before submission. Once validated, a process response message appears with estimated response time and next steps for the customer.
+
+Both forms use client-side validation to prevent invalid data submission and display clear error messages below any fields that need correction.
+
+5. GitHub and Deployment
+
+GitHub Repository updates include multiple descriptive commits for each new feature. Commits were made for adding the Leaflet map, implementing contact form validation, adding SEO meta tags, and creating the lightbox gallery. The README document was updated to include all new Part 3 information, screenshots, and a detailed changelog. All changes from Part 2 feedback and Part 3 development are recorded with dates and descriptions.
+
+Website Deployment was completed on Netlify free hosting platform. The site is now live and accessible on desktop, tablet, and mobile devices. The deployment link will be submitted with the final submission on the Learning Management System.
+
+6. Updated Changelog for Part 3
+On 1 June 2026 accordions, tabs, and smooth scroll JavaScript were implemented to improve user experience and navigation.
+On 3 June 2026 http://Leaflet.js interactive map was added to the Contact page with a marker for the Johannesburg boutique location.
+On 5 June 2026 an image gallery lightbox was created for product detail viewing on the Products page.
+On 7 June 2026 dynamic product search and filter functionality was built to allow real-time filtering of jewellery items.
+On 9 June 2026 unique title tags and meta descriptions were added to all five pages for better search engine visibility.
+On 11 June 2026 all product images were optimized with descriptive filenames and alt text for accessibility and SEO.
+On 13 June 2026 the http://contact.html form was developed with HTML5 and JavaScript validation and success response messaging.
+On 15 June 2026 the http://enquiry.html form was developed with validation and process response for customer enquiries.
+On 19 June 2026 the website was deployed to Netlify and the README was updated with all Part 3 details and documentation,Code was pushed to github.
+
+
 ​10. References 
 
 
