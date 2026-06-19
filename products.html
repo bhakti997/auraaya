@@ -20,6 +20,7 @@
         </nav>
     </header>
 
+
     <main>
         <img src="images/heroimageproducts.jpeg" alt="hero image for products page" class="hero-img">
 
@@ -42,6 +43,7 @@
                     <p>Price: R 20,000</p>
                     <p>Material: 18K Gold vermeil on sterling silver with natural ruby and uncut diamond accents.</p>
                     <p>Craftsmanship: Handmade lattice patterns inspired by ancient South Indian temple carvings. Layered chains with traditional uncut diamonds and deep red rubies. Made by skilled family artisans in Jaipur.</p>
+                    <button onclick="addToCart('Heritage Necklace',' 20000')">Add to Cart</button>
                 </article>
 
                 <!-- Product 2 -->
@@ -51,6 +53,7 @@
                     <p>Price: R 4,200</p>
                     <p>Material: 18K gold over sterling silver with clear cubic zirconia accents.</p>
                     <p>Craftsmanship: Handmade bell-shaped earrings with open lattice patterns inspired by Tamil Nadu temple architecture. Floral stud tops with crystal details and dangling gold beads. Made by skilled family artisans in Coimbatore.</p>
+                    <button onclick="addToCart('Temple Jhumka Earing',' 4200')">Add to Cart</button>
                 </article>
 
                 <!-- Product 3 -->
@@ -60,6 +63,7 @@
                     <p>Price: R 3,600</p>
                     <p>Material: 18K gold over brass with hand-painted enamel in green, red, and gold.</p>
                     <p>Craftsmanship: Hand-painted floral patterns using traditional meenakari enamel technique. Each bangle is crafted by skilled enamel artists in Kolkata, known for fine detail work. Smooth gold interior for comfort.</p>
+                    <button onclick="addToCart('Meenakari Bangles',' 3600')">Add to Cart</button>
                 </article>
 
                 <!-- Product 4 -->
@@ -69,8 +73,9 @@
                     <p>Price: R 2,400</p>
                     <p>Material: 18K gold over sterling silver with stamped coin charms.</p>
                     <p>Craftsmanship: Delicate chain anklet with small hanging coin charms inspired by ancient Indian currency. Lightweight and adjustable. Handmade by family artisans in Coimbatore, known for fine chain work.</p>
+                    <button onclick="addToCart('Arya Anklet',' 2400')">Add to Cart</button>
                 </article>
-
+        
                 <!-- Product 5 -->
                 <article class="product-item">
                     <img src="images/product3.jpeg" alt="Dynasty Ring">
@@ -78,6 +83,7 @@
                     <p>Price: R 2,900</p>
                     <p>Material: 18K gold over sterling silver with four lab-created rubies.</p>
                     <p>Craftsmanship: Four-stone floral ring with twisted band detail. Set with deep red stones inspired by Mughal-era jewellery. Handcrafted by skilled goldsmiths in Rajkot, Gujarat.</p>
+                    <button onclick="addToCart('Dynasty Stack Ring',' 2900')">Add to Cart</button>
                 </article>
 
                 <!-- Product 6 -->
@@ -87,6 +93,7 @@
                     <p>Price: R 6,800</p>
                     <p>Material: 18K gold over sterling silver. Pendant necklace, signet ring, and link bracelet sold as a set.</p>
                     <p>Craftsmanship: Matching set with carved lattice patterns inspired by Mughal jali screens and ancient stepwell designs. Chunky chain links with smooth finish. Made by master artisans in Jaipur, known for bold statement pieces.</p>
+                    <button onclick="addToCart('Jaali Men Set',' 6800')">Add to Cart</button>
                 </article>
             </section>
         </div>
@@ -98,5 +105,30 @@
         <p>Facebook: <a href="https://www.facebook.com/AuraayaWearableHistory" target="_blank">Auraaya Wearable History</a></p>
         <p>Location: South Africa | India.</p>
     </footer>
+
+<div id="toast" class="toast">
+    <div class="toast-content">
+        <div class="toast-logo-css">A</div> 
+        <div class="toast-text">
+            <strong id="toast-title"></strong><br>
+            <span id="toast-price"></span><br>
+            <small>Item successfully added to your cart</small>
+        </div>
+    </div>
+    <div class="toast-footer">
+        <div class="toast-cart-css">🛒</div> 
+        <button class="view-cart-btn" onclick="window.location.href='payment.html'">VIEW CART</button>
+    </div>
+</div>    
+
+<script>
+    // This connects your buttons to the main function in js.js
+    function addToCart(name, price) {
+        // This calls the master function we will put in js.js
+        window.saveItemToCart(name, price);
+    }
+</script>
+
+    <script src="javascript/js.js"></script>
 </body>
 </html>
